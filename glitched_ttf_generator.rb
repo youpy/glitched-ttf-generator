@@ -9,7 +9,7 @@ end
 put '/upload' do
   if params[:file]
     content_type params[:file][:type]
-    attachment 'glitched.ttf'
+    attachment 'glitched_%i.ttf' % Time.now
 
     f = params[:file][:tempfile]
     data = f.read
