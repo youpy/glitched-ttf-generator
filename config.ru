@@ -1,3 +1,8 @@
-require File.expand_path(File.dirname(__FILE__)) + '/glitched_ttf_generator'
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
+require './glitched_ttf_generator'
 
 run Sinatra::Application
