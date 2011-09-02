@@ -1,0 +1,7 @@
+%html
+  %body
+    %h1 Glitched TTF Generator
+    %form{:action => '/upload', :method => 'POST', :enctype => 'multipart/form-data'}
+      %input{:type => 'file',   :name => 'file'}
+      %input{:type => 'submit', :value => 'upload source .ttf'}
+      %input{:type => 'hidden', :name => '_method', :value => 'put'}
