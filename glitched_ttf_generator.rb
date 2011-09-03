@@ -3,6 +3,8 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
+  @title = 'Glitched TTF Generator'
+
   haml :index
 end
 
