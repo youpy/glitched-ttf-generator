@@ -9,3 +9,13 @@
       %input{:type => 'hidden', :name => '_method', :value => 'put'}
     %p
       %a{:href => 'https://github.com/youpy/glitched-ttf-generator'} github
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    .fb-like{:data => {:href => 'http://glitched-ttf-generator.heroku.com/', :send => 'false', :width => '450', 'show-faces' => 'true'}}
