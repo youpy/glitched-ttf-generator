@@ -3,6 +3,8 @@
     %title= @title
   %body
     %h1= @title
+    %p
+      %img{:src => 'http://gyazo.com/34f855dcb3de79df386d6fd440dcbf67.png'}
     %form{:action => '/upload', :method => 'POST', :enctype => 'multipart/form-data'}
       %input{:type => 'file',   :name => 'file'}
       %input{:type => 'submit', :value => 'upload source .ttf'}
